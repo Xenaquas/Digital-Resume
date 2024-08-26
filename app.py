@@ -8,6 +8,17 @@ css_file = current_dir / "styles" / "main.css"
 resume_file = current_dir / "assets" / "CV.pdf"
 profile_pic = current_dir / "assets" / "hamza.png"
 
+# Hide Streamlit Style
+hide_st_style = """
+        <style>
+        #MainMenu {visibility: hidden;}
+        .stActionButton div{visibility: hidden;}
+        #header {visibility: hidden;}
+        #footer {visibility: hidden;}
+        </style>
+"""
+st.markdown(hide_st_style, unsafe_allow_html=True)
+
 # ---- General Settings ----
 PAGE_TITLE = "Digital CV | Hamza Shaikh"
 PAGE_ICON = ":wave:"
